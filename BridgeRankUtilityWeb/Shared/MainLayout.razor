@@ -1,0 +1,33 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <main>
+        <!-- HEADER -->
+        <div class="bg-dark text-light container-fluid p-lg-3 p-sm-4">
+            <div class="row align-items-center">
+
+                <span class="col">
+                    <MenuItem Title="Classifica" Icon="trophy" Link="rank"></MenuItem>
+                    <MenuItem Title="Utenti" Icon="users" Link="users"></MenuItem>
+                </span>
+
+                <span class="col text-center">
+                    <h1 class="d-inline">B</h1><h4 class="d-inline">RIDGE </h4>
+                    <h1 class="d-inline">R</h1><h4 class="d-inline">ANK </h4>
+                    <h1 class="d-inline">U</h1><h4 class="d-inline">TILITY </h4>
+                </span>
+
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <!-- BODY -->
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+
+}

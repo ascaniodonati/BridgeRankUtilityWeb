@@ -1,0 +1,737 @@
+[
+  {
+    "NOME": "AMBROGIANI LEA",
+    "CODICE": "MBL010",
+    "TIPO": 3
+  },
+  {
+    "NOME": "ANTONIOLI ANDREA",
+    "CODICE": "NTR010",
+    "TIPO": 4
+  },
+  {
+    "NOME": "ARCANGELI ADRIANO",
+    "CODICE": "RCN052",
+    "TIPO": 2
+  },
+  {
+    "NOME": "ARCANGELI ANNAMARIA",
+    "CODICE": "RCR139",
+    "TIPO": 3
+  },
+  {
+    "NOME": "ARDUINI PAOLA",
+    "CODICE": "RDL057",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BADIOLI GABRIELE",
+    "CODICE": "BDL037",
+    "TIPO": 2
+  },
+  {
+    "NOME": "BAIETTI GABRIELE",
+    "CODICE": "BTL143",
+    "TIPO": 4
+  },
+  {
+    "NOME": "BARATTINI FABIO",
+    "CODICE": "BRB012",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BARBIERI SERGIO",
+    "CODICE": "BRG197",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BARGAGLI STOFFI BONA",
+    "CODICE": "BRN973",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BARRICELLI RAFFAELE",
+    "CODICE": "BRL563",
+    "TIPO": 1
+  },
+  {
+    "NOME": "BERARDI ROBERTO",
+    "CODICE": "BRT446",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BIAGINI ALEANDRO",
+    "CODICE": "BGR073",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BIZZOCCHI GIUSEPPE",
+    "CODICE": "BZP008",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BOLOGNA BARBARA",
+    "CODICE": "BLR283",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BONITO MARINA",
+    "CODICE": "BNN299",
+    "TIPO": 2
+  },
+  {
+    "NOME": "BORGHESI FRANCESCO",
+    "CODICE": "BRC128",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BRANDINA STEFANO",
+    "CODICE": "BRN953",
+    "TIPO": 1
+  },
+  {
+    "NOME": "BRIOLINI GIAN CARLO",
+    "CODICE": "BRL089",
+    "TIPO": 1
+  },
+  {
+    "NOME": "BRIOLINI PAOLO",
+    "CODICE": "BRL924",
+    "TIPO": 4
+  },
+  {
+    "NOME": "BRISIGOTTI MASSIMO",
+    "CODICE": "BRM091",
+    "TIPO": 1
+  },
+  {
+    "NOME": "BUCCI MARIA CLAUDIA",
+    "CODICE": "BCD003",
+    "TIPO": 4
+  },
+  {
+    "NOME": "BULGARELLI SERGIO",
+    "CODICE": "BLG040",
+    "TIPO": 3
+  },
+  {
+    "NOME": "BUSCAROLI GIORGIO",
+    "CODICE": "BSG046",
+    "TIPO": 4
+  },
+  {
+    "NOME": "CALDARI ANDREA",
+    "CODICE": "CLR247",
+    "TIPO": 4
+  },
+  {
+    "NOME": "CALDARI MARTINA",
+    "CODICE": "CLN404",
+    "TIPO": 4
+  },
+  {
+    "NOME": "CAMPANA ANTONINO",
+    "CODICE": "CMN059",
+    "TIPO": 3
+  },
+  {
+    "NOME": "CANCELLIERI DEBORA",
+    "CODICE": "CNR307",
+    "TIPO": 4
+  },
+  {
+    "NOME": "CAPELLO SERGIO",
+    "CODICE": "CPG056",
+    "TIPO": 2
+  },
+  {
+    "NOME": "CASATI SILVIA BRUNA",
+    "CODICE": "CSN400",
+    "TIPO": 2
+  },
+  {
+    "NOME": "CAVALLARI STEFANO",
+    "CODICE": "CVN057",
+    "TIPO": 3
+  },
+  {
+    "NOME": "CAVALLI GABRIELE",
+    "CODICE": "CVL026",
+    "TIPO": 3
+  },
+  {
+    "NOME": "CECCHINI ELISA",
+    "CODICE": "CCS061",
+    "TIPO": 3
+  },
+  {
+    "NOME": "CENERINI MASSIMILIANO",
+    "CODICE": "CNN401",
+    "TIPO": 3
+  },
+  {
+    "NOME": "CONTI GIANCARLO",
+    "CODICE": "CNL079",
+    "TIPO": 1
+  },
+  {
+    "NOME": "CORVINO TIZIANA",
+    "CODICE": "CRN633",
+    "TIPO": 4
+  },
+  {
+    "NOME": "CRUCIANI PAOLA",
+    "CODICE": "CRL173",
+    "TIPO": 3
+  },
+  {
+    "NOME": "CURCIO DAMIANO",
+    "CODICE": "CRN199",
+    "TIPO": 4
+  },
+  {
+    "NOME": "DALL'ARA GIAN PAOLO",
+    "CODICE": "DLL286",
+    "TIPO": 3
+  },
+  {
+    "NOME": "DALL'ARA NICOLA",
+    "CODICE": "DLL353",
+    "TIPO": 3
+  },
+  {
+    "NOME": "DE BONA DANIELE",
+    "CODICE": "DBL089",
+    "TIPO": 3
+  },
+  {
+    "NOME": "DE LORENZO FEDERICA",
+    "CODICE": "DLC046",
+    "TIPO": 4
+  },
+  {
+    "NOME": "DE VIVO ANTONIO",
+    "CODICE": "DVN051",
+    "TIPO": 3
+  },
+  {
+    "NOME": "DELMAGNO FLAVIO",
+    "CODICE": "DLV003",
+    "TIPO": 4
+  },
+  {
+    "NOME": "DELVECCHIO PAOLA",
+    "CODICE": "DLL072",
+    "TIPO": 1
+  },
+  {
+    "NOME": "DI LORENZO CLAUDIO",
+    "CODICE": "DLD108",
+    "TIPO": 2
+  },
+  {
+    "NOME": "DI SPIRITO MARIO",
+    "CODICE": "DSR098",
+    "TIPO": 3
+  },
+  {
+    "NOME": "DONATI DANIELE",
+    "CODICE": "DNL185",
+    "TIPO": 2
+  },
+  {
+    "NOME": "DONATI GIOVANNI",
+    "CODICE": "DNN006",
+    "TIPO": 1
+  },
+  {
+    "NOME": "DUBBINI PAOLA",
+    "CODICE": "DBL059",
+    "TIPO": 3
+  },
+  {
+    "NOME": "ENGLARO ANTONELLA FRANCESCA",
+    "CODICE": "NGC052",
+    "TIPO": 3
+  },
+  {
+    "NOME": "EVANGELISTI RITA",
+    "CODICE": "VNT003",
+    "TIPO": 3
+  },
+  {
+    "NOME": "FABBRETTI GIOVANNA",
+    "CODICE": "FBN050",
+    "TIPO": 2
+  },
+  {
+    "NOME": "FABBRI LUCA",
+    "CODICE": "FBC042",
+    "TIPO": 4
+  },
+  {
+    "NOME": "FAZZARDI GIANFRANCO",
+    "CODICE": "FZC003",
+    "TIPO": 1
+  },
+  {
+    "NOME": "FERRARI GIOVANNA ANGELA",
+    "CODICE": "FRL178",
+    "TIPO": 3
+  },
+  {
+    "NOME": "FILIPPONI ENRICO",
+    "CODICE": "FLC108",
+    "TIPO": 3
+  },
+  {
+    "NOME": "FIORINI FIORENZO",
+    "CODICE": "FRZ043",
+    "TIPO": 1
+  },
+  {
+    "NOME": "FOLLI MARINA",
+    "CODICE": "FLN121",
+    "TIPO": 3
+  },
+  {
+    "NOME": "FOSCHI FABIO",
+    "CODICE": "FSB007",
+    "TIPO": 3
+  },
+  {
+    "NOME": "FRASCAROLI ELISABETTA",
+    "CODICE": "FRT250",
+    "TIPO": 4
+  },
+  {
+    "NOME": "FRASSINI PAOLO",
+    "CODICE": "FRL058",
+    "TIPO": 3
+  },
+  {
+    "NOME": "FRASSINI SANTE",
+    "CODICE": "FRT125",
+    "TIPO": 3
+  },
+  {
+    "NOME": "GALLI LORENZO",
+    "CODICE": "GLZ016",
+    "TIPO": 4
+  },
+  {
+    "NOME": "GAMBONI ELISA",
+    "CODICE": "GMS018",
+    "TIPO": 4
+  },
+  {
+    "NOME": "GASPERONI MILENA",
+    "CODICE": "GSN114",
+    "TIPO": 2
+  },
+  {
+    "NOME": "GENEROSI GIANMARIO",
+    "CODICE": "GNR062",
+    "TIPO": 1
+  },
+  {
+    "NOME": "GENGHINI GIANFRANCO",
+    "CODICE": "GNC024",
+    "TIPO": 3
+  },
+  {
+    "NOME": "GHINELLI LARA",
+    "CODICE": "GHR013",
+    "TIPO": 3
+  },
+  {
+    "NOME": "GIACOMINI ADALBERTO",
+    "CODICE": "GCT011",
+    "TIPO": 3
+  },
+  {
+    "NOME": "GIANNINI GLAUCO",
+    "CODICE": "GNC083",
+    "TIPO": 3
+  },
+  {
+    "NOME": "GIORGI ALBERTO",
+    "CODICE": "GRT255",
+    "TIPO": 2
+  },
+  {
+    "NOME": "GIOVAGNOLI BARBARA",
+    "CODICE": "GVR008",
+    "TIPO": 4
+  },
+  {
+    "NOME": "GJELOSHI XHOI",
+    "CODICE": "GJH001",
+    "TIPO": 4
+  },
+  {
+    "NOME": "GORRA MARIA BEATRICE",
+    "CODICE": "GRC027",
+    "TIPO": 1
+  },
+  {
+    "NOME": "GRISETTI MAURIZIA",
+    "CODICE": "GRT297",
+    "TIPO": 3
+  },
+  {
+    "NOME": "GUIDI PISANA",
+    "CODICE": "GDN017",
+    "TIPO": 4
+  },
+  {
+    "NOME": "IAIA COSIMO",
+    "CODICE": "CSM007",
+    "TIPO": 3
+  },
+  {
+    "NOME": "IOMMI ROSALBA",
+    "CODICE": "MMB001",
+    "TIPO": 3
+  },
+  {
+    "NOME": "IONI ANNAMARIA",
+    "CODICE": "NNR013",
+    "TIPO": 2
+  },
+  {
+    "NOME": "JOMMI LEDA",
+    "CODICE": "JMD001",
+    "TIPO": 4
+  },
+  {
+    "NOME": "LAMPREDI DANIELA",
+    "CODICE": "LML093",
+    "TIPO": 3
+  },
+  {
+    "NOME": "LANZETTI ANNA MARIA",
+    "CODICE": "LNR131",
+    "TIPO": 2
+  },
+  {
+    "NOME": "LO FARO ROSSELLA",
+    "CODICE": "LFL034",
+    "TIPO": 4
+  },
+  {
+    "NOME": "LOPEZ PIERO",
+    "CODICE": "PRZ029",
+    "TIPO": 4
+  },
+  {
+    "NOME": "LUIS ANGELA",
+    "CODICE": "LSL004",
+    "TIPO": 3
+  },
+  {
+    "NOME": "LUNEDEI DANILO",
+    "CODICE": "LNL180",
+    "TIPO": 3
+  },
+  {
+    "NOME": "MACCALLI ENRICA",
+    "CODICE": "MCC078",
+    "TIPO": 4
+  },
+  {
+    "NOME": "MAGNANI CORRADO",
+    "CODICE": "MGD043",
+    "TIPO": 3
+  },
+  {
+    "NOME": "MAGNANI MAURIZIO",
+    "CODICE": "MGZ003",
+    "TIPO": 3
+  },
+  {
+    "NOME": "MALDINI DANIELA",
+    "CODICE": "MLL019",
+    "TIPO": 1
+  },
+  {
+    "NOME": "MALTONI GIANFRANCO",
+    "CODICE": "MLC004",
+    "TIPO": 1
+  },
+  {
+    "NOME": "MANDOLESI GIORGIO",
+    "CODICE": "MNG124",
+    "TIPO": 2
+  },
+  {
+    "NOME": "MARTINI LINDA",
+    "CODICE": "MRD053",
+    "TIPO": 3
+  },
+  {
+    "NOME": "MASCHIO MARIA PIA",
+    "CODICE": "MSP033",
+    "TIPO": 3
+  },
+  {
+    "NOME": "MASSARI GIACOMO",
+    "CODICE": "MSM032",
+    "TIPO": 4
+  },
+  {
+    "NOME": "MINGOLLA CHRISTOPHER",
+    "CODICE": "MNR467",
+    "TIPO": 4
+  },
+  {
+    "NOME": "MINUTILLO VINCENZO",
+    "CODICE": "MNZ150",
+    "TIPO": 4
+  },
+  {
+    "NOME": "MOLINARI MARCO AURELIO",
+    "CODICE": "MLL196",
+    "TIPO": 3
+  },
+  {
+    "NOME": "MONTALTI EDDA",
+    "CODICE": "MND045",
+    "TIPO": 4
+  },
+  {
+    "NOME": "MORRI SILVIA",
+    "CODICE": "MRV015",
+    "TIPO": 1
+  },
+  {
+    "NOME": "MUCCIOLI MASSIMO",
+    "CODICE": "MCM018",
+    "TIPO": 3
+  },
+  {
+    "NOME": "NANNI ALESSANDRO",
+    "CODICE": "NNR074",
+    "TIPO": 3
+  },
+  {
+    "NOME": "NANNI SILVANO",
+    "CODICE": "NNN014",
+    "TIPO": 1
+  },
+  {
+    "NOME": "NAVINO CARLO",
+    "CODICE": "NVL031",
+    "TIPO": 3
+  },
+  {
+    "NOME": "ORAZIETTI VALERIO",
+    "CODICE": "RZR057",
+    "TIPO": 4
+  },
+  {
+    "NOME": "ORLANDI MICHELA",
+    "CODICE": "RLL027",
+    "TIPO": 3
+  },
+  {
+    "NOME": "PALAZZINI FINETTI DAVIDE",
+    "CODICE": "PLD038",
+    "TIPO": 3
+  },
+  {
+    "NOME": "PAOLUCCI MAURO",
+    "CODICE": "PLR206",
+    "TIPO": 1
+  },
+  {
+    "NOME": "PECCI ANTONIA",
+    "CODICE": "PCN150",
+    "TIPO": 1
+  },
+  {
+    "NOME": "PECCI CLELIA",
+    "CODICE": "PCL013",
+    "TIPO": 1
+  },
+  {
+    "NOME": "PECCI FERRANTE",
+    "CODICE": "PCT009",
+    "TIPO": 1
+  },
+  {
+    "NOME": "PELONI SIMONETTA",
+    "CODICE": "PLT053",
+    "TIPO": 4
+  },
+  {
+    "NOME": "PESCI FABIO",
+    "CODICE": "PSB002",
+    "TIPO": 3
+  },
+  {
+    "NOME": "PIERGALLINI BARBARA",
+    "CODICE": "PRR095",
+    "TIPO": 4
+  },
+  {
+    "NOME": "PINI CESARINA",
+    "CODICE": "PNN241",
+    "TIPO": 3
+  },
+  {
+    "NOME": "PIOMBINI MAURIZIO",
+    "CODICE": "PMZ002",
+    "TIPO": 3
+  },
+  {
+    "NOME": "PLACUCCI FEDERICO",
+    "CODICE": "PLC122",
+    "TIPO": 1
+  },
+  {
+    "NOME": "PRETE ANNICK",
+    "CODICE": "PRK009",
+    "TIPO": 3
+  },
+  {
+    "NOME": "RAINERO FEDERICO",
+    "CODICE": "RNC026",
+    "TIPO": 3
+  },
+  {
+    "NOME": "RICCI GIUSEPPE",
+    "CODICE": "RCP021",
+    "TIPO": 2
+  },
+  {
+    "NOME": "SANCHI GRAZIELLA",
+    "CODICE": "SNL190",
+    "TIPO": 3
+  },
+  {
+    "NOME": "SANTI GIUSEPPE",
+    "CODICE": "SNP023",
+    "TIPO": 3
+  },
+  {
+    "NOME": "SANTINI MASSIMO",
+    "CODICE": "SNM032",
+    "TIPO": 3
+  },
+  {
+    "NOME": "SARACINO FRANCESCO",
+    "CODICE": "SRC096",
+    "TIPO": 3
+  },
+  {
+    "NOME": "SCALICI TERESA",
+    "CODICE": "SCS016",
+    "TIPO": 4
+  },
+  {
+    "NOME": "SEBASTIANI CINZIA",
+    "CODICE": "SBZ018",
+    "TIPO": 4
+  },
+  {
+    "NOME": "SGUBBI GIANCARLO",
+    "CODICE": "SGL008",
+    "TIPO": 3
+  },
+  {
+    "NOME": "SIMONI ELIO",
+    "CODICE": "SML018",
+    "TIPO": 3
+  },
+  {
+    "NOME": "SIMONI SERGIO",
+    "CODICE": "SMG024",
+    "TIPO": 3
+  },
+  {
+    "NOME": "SPINA ALESSANDRO",
+    "CODICE": "SPR039",
+    "TIPO": 1
+  },
+  {
+    "NOME": "SPINACI FRANCO",
+    "CODICE": "SPC107",
+    "TIPO": 3
+  },
+  {
+    "NOME": "TAMAGNINI SECONDO",
+    "CODICE": "TMD003",
+    "TIPO": 1
+  },
+  {
+    "NOME": "TAMAI ANTONIO",
+    "CODICE": "TMN012",
+    "TIPO": 2
+  },
+  {
+    "NOME": "TEGON ELETTRA",
+    "CODICE": "TGR040",
+    "TIPO": 4
+  },
+  {
+    "NOME": "TOMBINI BRUNO",
+    "CODICE": "TMN025",
+    "TIPO": 4
+  },
+  {
+    "NOME": "TONTI SONIA",
+    "CODICE": "TNN110",
+    "TIPO": 4
+  },
+  {
+    "NOME": "TORRONI ALFREDO",
+    "CODICE": "TRD154",
+    "TIPO": 4
+  },
+  {
+    "NOME": "TORRONI ANGELO",
+    "CODICE": "TRL089",
+    "TIPO": 1
+  },
+  {
+    "NOME": "TOSATO LUCIANO",
+    "CODICE": "TSN016",
+    "TIPO": 3
+  },
+  {
+    "NOME": "TOSCANO BRUNO",
+    "CODICE": "TSN032",
+    "TIPO": 4
+  },
+  {
+    "NOME": "URBINATI FRANCO",
+    "CODICE": "RBC051",
+    "TIPO": 3
+  },
+  {
+    "NOME": "VENTURI ALESSANDRO",
+    "CODICE": "VNR036",
+    "TIPO": 3
+  },
+  {
+    "NOME": "VENTURINI RICCARDO",
+    "CODICE": "VND036",
+    "TIPO": 3
+  },
+  {
+    "NOME": "VICI MASSIMILIANO",
+    "CODICE": "VCN016",
+    "TIPO": 3
+  },
+  {
+    "NOME": "ZANNONI LORIS",
+    "CODICE": "ZNS035",
+    "TIPO": 3
+  },
+  {
+    "NOME": "ZEPPA GABRIELLA",
+    "CODICE": "ZPL003",
+    "TIPO": 4
+  }
+]

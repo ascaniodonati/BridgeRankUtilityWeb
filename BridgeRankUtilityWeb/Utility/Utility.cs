@@ -61,7 +61,8 @@ namespace BridgeRankUtilityWeb.Utility
             if (type == TournamentType.Pair) { symbol = '°'; }
             else if (type == TournamentType.Team) { symbol = 'ª'; }
 
-            position = position.Substring(0, position.IndexOf(symbol));
+            //position = position.Substring(0, position.IndexOf(symbol));
+            position = position.Substring(0, position.Length - 1);
             return int.Parse(position.Trim());
         }
     }

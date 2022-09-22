@@ -5,7 +5,7 @@
         Pair,
         Team,
 
-        NoFound,
+        NotFound,
         NoLink
     }
 }

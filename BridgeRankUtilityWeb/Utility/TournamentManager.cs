@@ -6,128 +6,130 @@ using System.Diagnostics;
 
 namespace BridgeRankUtilityWeb.Utility
 {
-    public class TournamentManager
+    public class TournamentUtility
     {
         public static List<Tournament> TOURNAMENTS = new List<Tournament>();
 
-        public static void DeleteTournamentFromLink(string link)
+#pragma warning disable
+        public async static Task<Tournament> GetTournamentFromDoc(string url)
         {
-            TOURNAMENTS.Remove(GetTournamentByLink(link));
-        }
+            HtmlDocument doc = new HtmlDocument();
+            HtmlNode rootNode;
 
-        private static HtmlNode HtmlGetTable(HtmlDocument doc)
-        {
-            HtmlNode div = doc.DocumentNode.SelectNodes("//div").Where(s =>
-                    s.Attributes.Contains("class") &&
-                    s.Attributes["class"].Value.Contains("DivCentroSZ")).FirstOrDefault();
+            if (!url.Contains("http")) { return new Tournament { Type = TournamentType.NoLink }; }
 
-            HtmlNode table = div.SelectSingleNode("./table");
-            return table;
-        }
-
-        public static void CreateTournamentFromDoc(HtmlDocument doc, string link, TournamentType type)
-        {
-            switch (type)
+            using (HttpClient hc = new HttpClient())
             {
-                case TournamentType.Pair:
-                    CreatePairTournamentFromDoc(doc, link);
-                    break;
-                case TournamentType.Team:
-                    CreateTeamTournamentFromDoc(doc, link);
-                    break;
+                string html = await hc.GetStringAsync(url);
+                doc.LoadHtml(html);
+            }
+
+            //Recuperiamo il titolo
+            HtmlNode titleNode =
+                doc.DocumentNode.SelectNodes("//div").Where(s =>
+                    s.Attributes.Contains("class") &&
+                    s.Attributes["class"].Value.Contains("TitoloTorGareClass"))
+                    .FirstOrDefault();
+
+            if (titleNode == null) { return new Tournament { Type = TournamentType.NotFound }; }
+            string title = titleNode.InnerText.ToLower();
+
+            //Creiamo il node con dentro la tabella delle classifiche
+            HtmlNode div = doc.DocumentNode.SelectNodes("//div").Where(s =>
+                s.Attributes.Contains("class") &&
+                s.Attributes["class"].Value.Contains("DivCentroSZ")).FirstOrDefault();
+
+            rootNode = div.SelectSingleNode("./table");
+
+            if (title.Contains("squadre"))
+            {
+                return CreateTeamTournamentFromDoc(rootNode, url);
+            }
+            else if (title.Contains("coppie") || title.Contains("simultaneo"))
+            {
+                return CreatePairTournamentFromDoc(rootNode, url);
+            }
+            else
+            {
+                return new Tournament { Type = TournamentType.NotFound };
             }
         }
 
-        public static bool TournamentAlreadyExist(string link)
-        {
-            return TOURNAMENTS.Where(s => s.URL == link).Any();
-        }
 
-        public static Tournament GetTournamentByLink(string link)
+        private static Tournament CreatePairTournamentFromDoc(HtmlNode rootNode, string url)
         {
-            return TOURNAMENTS.Where(s => s.URL == link).FirstOrDefault();
-        }
-
-        private static void CreatePairTournamentFromDoc(HtmlDocument doc, string link)
-        {
-            HtmlNode table = HtmlGetTable(doc);
             List<Player> playersInTournament = new List<Player>();
             List<Player> playersInTournament2 = new List<Player>();
 
-            foreach (HtmlNode child in table.Descendants())
+            var rankPositions =
+                rootNode.Descendants().Where(x =>
+                    x.Attributes.Contains("class") &&
+                    x.Attributes["class"].Value.Contains(" ALTbase25"));
+
+            Console.WriteLine(rankPositions.Count());
+
+            foreach (HtmlNode child in rankPositions)
             {
+                string NAME1 = child.ChildNodes.Where(s =>
+                s.Attributes.Contains("class") &&
+                s.Attributes["class"].Value.Contains("POSbase0")).FirstOrDefault().InnerText;
 
-                if (child.Attributes.Contains("class") && child.Attributes["class"].Value.Contains(" ALTbase25"))
-                {
-                    string NAME1 = child.ChildNodes.Where(s =>
+                string FIGBCODE1 = child.ChildNodes.Where(s =>
                     s.Attributes.Contains("class") &&
-                    s.Attributes["class"].Value.Contains("POSbase0")).FirstOrDefault().InnerText;
+                    s.Attributes["class"].Value.Contains("COLceleste")).FirstOrDefault().InnerText;
 
-                    string FIGBCODE1 = child.ChildNodes.Where(s =>
-                        s.Attributes.Contains("class") &&
-                        s.Attributes["class"].Value.Contains("COLceleste")).FirstOrDefault().InnerText;
+                string NAME2 = child.ChildNodes.Where(s =>
+                    s.Attributes.Contains("class") &&
+                    s.Attributes["class"].Value.Contains("POSbase0")).Last().InnerText;
 
-                    string NAME2 = child.ChildNodes.Where(s =>
-                        s.Attributes.Contains("class") &&
-                        s.Attributes["class"].Value.Contains("POSbase0")).Last().InnerText;
+                string FIGBCODE2 = child.ChildNodes.Where(s =>
+                    s.Attributes.Contains("class") &&
+                    s.Attributes["class"].Value.Contains("COLceleste")).Last().InnerText;
 
-                    string FIGBCODE2 = child.ChildNodes.Where(s =>
-                        s.Attributes.Contains("class") &&
-                        s.Attributes["class"].Value.Contains("COLceleste")).Last().InnerText;
+                int POSITION = child.ChildNodes.Where(s =>
+                    s.Attributes.Contains("class") &&
+                    s.Attributes["class"].Value.Contains("COLgray")).FirstOrDefault().InnerText.ParsePosition(TournamentType.Pair);
 
-                    int POSITION = child.ChildNodes.Where(s =>
-                        s.Attributes.Contains("class") &&
-                        s.Attributes["class"].Value.Contains("COLgray")).FirstOrDefault().InnerText.ParsePosition(TournamentType.Pair);
+                Player p1 = new Player
+                {
+                    Nome = NAME1.ParseName(),
+                    FIGBCode = FIGBCODE1.Trim(),
+                    Categoria = PlayersManager.GetCategoryFromCode(FIGBCODE1.Trim()),
+                    Posizione = POSITION
+                };
 
-                    Player p1 = new Player
-                    {
-                        Nome = NAME1.ParseName(),
-                        FIGBCode = FIGBCODE1.Trim(),
-                        Categoria = PlayersManager.GetCategoryFromCode(FIGBCODE1.Trim()),
-                        Posizione = POSITION
-                    };
+                Player p2 = new Player
+                {
+                    Nome = NAME2.ParseName(),
+                    FIGBCode = FIGBCODE2.Trim(),
+                    Categoria = PlayersManager.GetCategoryFromCode(FIGBCODE2.Trim()),
+                    Posizione = POSITION
+                };
 
-                    Player p2 = new Player
-                    {
-                        Nome = NAME2.ParseName(),
-                        FIGBCode = FIGBCODE2.Trim(),
-                        Categoria = PlayersManager.GetCategoryFromCode(FIGBCODE2.Trim()),
-                        Posizione = POSITION
-                    };
-
-                    playersInTournament.Add(p1);
-                    playersInTournament.Add(p2);
-                }
+                playersInTournament.Add(p1);
+                playersInTournament.Add(p2);
             }
 
             Tournament t = new Tournament
             {
                 Players = playersInTournament,
-                Code = Utility.GetURLArgs(link, "cod"),
-                Date = DateTime.Parse(Utility.GetURLArgs(link, "data")),
+                Code = Utility.GetURLArgs(url, "cod"),
+                Date = DateTime.Parse(Utility.GetURLArgs(url, "data")),
                 Type = TournamentType.Pair,
-                URL = link
+                URL = url
             };
 
             t.AssignPoints();
-            TOURNAMENTS.Add(t);
-
-            Console.WriteLine();
+            return t;
         }
 
-        private static void CreateTeamTournamentFromDoc(HtmlDocument doc, string link)
+        private static Tournament CreateTeamTournamentFromDoc(HtmlNode rootNode, string link)
         {
-            HtmlNode table = HtmlGetTable(doc);
             List<Player> playersInTournament = new List<Player>();
             int POSITION = 0;
 
-            foreach (HtmlNode child in table.Descendants())
+            foreach (HtmlNode child in rootNode.Descendants())
             {
-                if (child.Attributes.Contains("class"))
-                {
-                    Debug.WriteLine(child.Attributes["class"].Value);
-                }
-
                 if (child.Attributes.Contains("class") && child.Attributes["class"].Value.Contains("TitoloSezOver"))
                 {
                     POSITION = child.InnerText.ParsePosition(TournamentType.Team);
@@ -171,7 +173,7 @@ namespace BridgeRankUtilityWeb.Utility
             };
 
             t.AssignPoints();
-            TOURNAMENTS.Add(t);
+            return t;
 
         }
 
@@ -183,18 +185,15 @@ namespace BridgeRankUtilityWeb.Utility
                  where p.Categoria != 9
                  group p by new { p.FIGBCode, p.Nome, p.Categoria } into g
                  orderby g.Key.Categoria, g.Sum(s => s.Punti) descending
-                 select new Player { FIGBCode = g.Key.FIGBCode, Nome = g.Key.Nome, Categoria = g.Key.Categoria, Punti = g.Sum(s => s.Punti) };
+                 select new Player
+                 {
+                     FIGBCode = g.Key.FIGBCode,
+                     Nome = g.Key.Nome,
+                     Categoria = g.Key.Categoria,
+                     Punti = g.Sum(s => s.Punti)
+                 };
 
             return classifica;
-        }
-
-        public static void SaveLocalTournament(string path)
-        {
-            string JSON_TOURNAMENT = JsonConvert.SerializeObject(TOURNAMENTS);
-
-            StreamWriter sw = new StreamWriter(path);
-            sw.WriteLine(JSON_TOURNAMENT);
-            sw.Close();
         }
     }
 }

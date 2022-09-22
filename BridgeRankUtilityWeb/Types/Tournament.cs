@@ -10,6 +10,11 @@ namespace BridgeRankUtilityWeb.Types
         public DateTime Date { get; set; }
         public string URL { get; set; }
 
+        public void GetPlayers()
+        {
+
+        }
+
         public void AssignPoints()
         { 
             Players = Players.OrderBy(s => s.Posizione).ToList();
@@ -61,5 +66,7 @@ namespace BridgeRankUtilityWeb.Types
                 }
             });
         }
+
+
     }
 }

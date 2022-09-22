@@ -1,21 +1,29 @@
 ﻿@page "/rank"
 @using BridgeRankUtilityWeb.Elements
+@using BridgeRankUtilityWeb.Enums
 @using BridgeRankUtilityWeb.Types
 @using BridgeRankUtilityWeb.Utility
+@using System.Net
+@using HtmlAgilityPack
 
 <div class="container-fluid h-100">
     <div class="row">
         <div class="col-6">
             <h2 class="mb-3">Aggiungi un torneo</h2>
 
-            <input class="form-control" type="text" placeholder="Incolla qui il link" @bind-value="TournamentName" @bind-value:event="oninput" />
-            
-            <TournamentElement />
+            <input class="form-control" type="text" placeholder="Incolla qui il link" @bind-value="TournamentURL" />
 
-            <!-- Avviso di torneo non esistente -->
-            <div class="alert alert-danger pe-3" role="alert">
-                <p class="m-0"><strong>Attenzione!</strong> Il torneo non esiste</p>
-            </div>
+            @if (AddingTournament != null)
+            {
+                <TournamentElement Tournament="AddingTournament" />
+            }
+            else
+            {
+                <!-- Avviso di torneo non esistente -->
+                <div class="alert alert-danger pe-3" role="alert">
+                    <p class="m-0"><strong>Attenzione!</strong> Il torneo non esiste</p>
+                </div>
+            }
         </div>
         <div class="col-6">
         </div>
@@ -23,23 +31,26 @@
 </div>
 
 @code {
-    private string _tournamentName;
+    HtmlDocument doc = new HtmlDocument();
+    Tournament AddingTournament;
 
-    public string TournamentName
+    string _tournamentURL;
+
+    public string TournamentURL
     {
-        get => _tournamentName;
+        get => _tournamentURL;
         set
         {
-            if (_tournamentName != value)
+            if (_tournamentURL != value)
             {
-                _tournamentName = value;
-                LoadTournament();
+                _tournamentURL = value;
+                LoadTournament(_tournamentURL);
             }
         }
     }
 
-    public void LoadTournament()
+    public async void LoadTournament(string url)
     {
-        Tournament tournament = TournamentManager.GetTournamentByLink(_tournamentName);
+        AddingTournament = await TournamentUtility.GetTournamentFromDoc(url);
     }
 }

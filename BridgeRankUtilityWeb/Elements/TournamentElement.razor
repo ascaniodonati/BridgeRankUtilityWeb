@@ -1,0 +1,52 @@
+﻿@using BridgeRankUtilityWeb.Types
+<div class="card">
+    <div class="card-body">
+
+        <p class="mb-1">
+            <i class="fa-solid fa-cards"></i>
+            <strong>Codice:</strong> @Tournament.Code
+        </p>
+
+        <p class="mb-1">
+            <i class="fa-solid fa-trophy me-1"></i>
+            <span>Torneo <strong>@TournamentTypeString</strong></span>
+        </p>
+
+        <p class="m-0">
+            <i class="fa-solid fa-calendar-days me-1"></i>
+            <span>@Tournament.Date.ToShortDateString()</span>
+        </p>
+
+        <div class="mt-2">
+            <button class="btn btn-success">Aggiungi</button>
+            <a href="@Tournament.URL" target="_blank"><button class="btn btn-primary">Naviga</button></a>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Tournament Tournament { get; set; } = new Tournament
+        {
+            Code = "GOGL01",
+            Date = DateTime.Now,
+            Type = Enums.TournamentType.Team,
+            URL = "http://www.google.it"
+        };
+
+    public string TournamentTypeString
+    {
+        get
+        {
+            switch (Tournament.Type)
+            {
+                case Enums.TournamentType.Pair:
+                    return "a coppie";
+                case Enums.TournamentType.Team:
+                    return "a squadre";
+                default:
+                    return "";
+            }
+        }
+    }
+}

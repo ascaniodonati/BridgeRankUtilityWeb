@@ -1,3 +1,42 @@
 ﻿a {
     text-decoration: none;
 }
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.ask-button-delete > i {
+    color: red;
+}
+
+.ask-button-edit > i {
+    color: dodgerblue;
+}
+
+.ask-table-wrapper {
+    max-height: 75vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    display: inline-block;
+}
+
+#app > div > .loadingTitle {
+    color: yellow;
+    /*animation: loading infinite 1s;*/
+}
+
+@keyframes loading {
+    0% {
+        content: 'Loading.'
+    }
+
+    , 33% {
+        content: 'Loading..'
+    }
+
+    , 66% {
+        content: 'Loading...'
+    }
+}

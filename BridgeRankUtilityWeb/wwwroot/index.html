@@ -4,25 +4,39 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>BridgeRankUtilityWeb</title>
+    <title>Bridge Rank Utility</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/app.css" rel="stylesheet" />
-    <link href="css/ask.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet"/>
+    <link href="css/ask.css" rel="stylesheet"/>
     <link href="BridgeRankUtilityWeb.styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/font-awesome/css/fontawesome.min.css" />
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div id="app">
+        <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+            <img class="h-25 mb-5" src="cards.png" />
+            <p class="fs-3">Bridge Rank Utility si sta caricando...</p>
+        </div>
+    </div>
 
-    <div id="blazor-error-ui">
+    <div id="blazor-error-ui" class="d-none">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+
+    <script>
+        function scrollToTop() {
+            var myDiv = document.getElementById("usersTableWrapper");
+            myDiv.scrollTop = 0; 
+        }
+    </script>
+
     <script src="https://kit.fontawesome.com/041efc6993.js" crossorigin="anonymous"></script>
     <script src="_framework/blazor.webassembly.js"></script>
+
 </body>
 
 </html>

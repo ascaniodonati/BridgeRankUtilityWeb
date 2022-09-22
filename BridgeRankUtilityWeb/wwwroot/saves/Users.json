@@ -1,0 +1,737 @@
+[
+  {
+    "NOME": "AMBROGIANI LEA",
+    "FIGBCODE": "MBL010",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "ANTONIOLI ANDREA",
+    "FIGBCODE": "NTR010",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "ARCANGELI ADRIANO",
+    "FIGBCODE": "RCN052",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "ARCANGELI ANNAMARIA",
+    "FIGBCODE": "RCR139",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "ARDUINI PAOLA",
+    "FIGBCODE": "RDL057",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BADIOLI GABRIELE",
+    "FIGBCODE": "BDL037",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "BAIETTI GABRIELE",
+    "FIGBCODE": "BTL143",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "BARATTINI FABIO",
+    "FIGBCODE": "BRB012",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BARBIERI SERGIO",
+    "FIGBCODE": "BRG197",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BARGAGLI STOFFI BONA",
+    "FIGBCODE": "BRN973",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BARRICELLI RAFFAELE",
+    "FIGBCODE": "BRL563",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "BERARDI ROBERTO",
+    "FIGBCODE": "BRT446",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BIAGINI ALEANDRO",
+    "FIGBCODE": "BGR073",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BIZZOCCHI GIUSEPPE",
+    "FIGBCODE": "BZP008",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BOLOGNA BARBARA",
+    "FIGBCODE": "BLR283",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BONITO MARINA",
+    "FIGBCODE": "BNN299",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "BORGHESI FRANCESCO",
+    "FIGBCODE": "BRC128",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BRANDINA STEFANO",
+    "FIGBCODE": "BRN953",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "BRIOLINI GIAN CARLO",
+    "FIGBCODE": "BRL089",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "BRIOLINI PAOLO",
+    "FIGBCODE": "BRL924",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "BRISIGOTTI MASSIMO",
+    "FIGBCODE": "BRM091",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "BUCCI MARIA CLAUDIA",
+    "FIGBCODE": "BCD003",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "BULGARELLI SERGIO",
+    "FIGBCODE": "BLG040",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "BUSCAROLI GIORGIO",
+    "FIGBCODE": "BSG046",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "CALDARI ANDREA",
+    "FIGBCODE": "CLR247",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "CALDARI MARTINA",
+    "FIGBCODE": "CLN404",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "CAMPANA ANTONINO",
+    "FIGBCODE": "CMN059",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "CANCELLIERI DEBORA",
+    "FIGBCODE": "CNR307",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "CAPELLO SERGIO",
+    "FIGBCODE": "CPG056",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "CASATI SILVIA BRUNA",
+    "FIGBCODE": "CSN400",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "CAVALLARI STEFANO",
+    "FIGBCODE": "CVN057",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "CAVALLI GABRIELE",
+    "FIGBCODE": "CVL026",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "CECCHINI ELISA",
+    "FIGBCODE": "CCS061",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "CENERINI MASSIMILIANO",
+    "FIGBCODE": "CNN401",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "CONTI GIANCARLO",
+    "FIGBCODE": "CNL079",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "CORVINO TIZIANA",
+    "FIGBCODE": "CRN633",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "CRUCIANI PAOLA",
+    "FIGBCODE": "CRL173",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "CURCIO DAMIANO",
+    "FIGBCODE": "CRN199",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "DALL'ARA GIAN PAOLO",
+    "FIGBCODE": "DLL286",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "DALL'ARA NICOLA",
+    "FIGBCODE": "DLL353",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "DE BONA DANIELE",
+    "FIGBCODE": "DBL089",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "DE LORENZO FEDERICA",
+    "FIGBCODE": "DLC046",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "DE VIVO ANTONIO",
+    "FIGBCODE": "DVN051",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "DELMAGNO FLAVIO",
+    "FIGBCODE": "DLV003",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "DELVECCHIO PAOLA",
+    "FIGBCODE": "DLL072",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "DI LORENZO CLAUDIO",
+    "FIGBCODE": "DLD108",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "DI SPIRITO MARIO",
+    "FIGBCODE": "DSR098",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "DONATI DANIELE",
+    "FIGBCODE": "DNL185",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "DONATI GIOVANNI",
+    "FIGBCODE": "DNN006",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "DUBBINI PAOLA",
+    "FIGBCODE": "DBL059",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "ENGLARO ANTONELLA FRANCESCA",
+    "FIGBCODE": "NGC052",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "EVANGELISTI RITA",
+    "FIGBCODE": "VNT003",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "FABBRETTI GIOVANNA",
+    "FIGBCODE": "FBN050",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "FABBRI LUCA",
+    "FIGBCODE": "FBC042",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "FAZZARDI GIANFRANCO",
+    "FIGBCODE": "FZC003",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "FERRARI GIOVANNA ANGELA",
+    "FIGBCODE": "FRL178",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "FILIPPONI ENRICO",
+    "FIGBCODE": "FLC108",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "FIORINI FIORENZO",
+    "FIGBCODE": "FRZ043",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "FOLLI MARINA",
+    "FIGBCODE": "FLN121",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "FOSCHI FABIO",
+    "FIGBCODE": "FSB007",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "FRASCAROLI ELISABETTA",
+    "FIGBCODE": "FRT250",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "FRASSINI PAOLO",
+    "FIGBCODE": "FRL058",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "FRASSINI SANTE",
+    "FIGBCODE": "FRT125",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "GALLI LORENZO",
+    "FIGBCODE": "GLZ016",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "GAMBONI ELISA",
+    "FIGBCODE": "GMS018",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "GASPERONI MILENA",
+    "FIGBCODE": "GSN114",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "GENEROSI GIANMARIO",
+    "FIGBCODE": "GNR062",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "GENGHINI GIANFRANCO",
+    "FIGBCODE": "GNC024",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "GHINELLI LARA",
+    "FIGBCODE": "GHR013",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "GIACOMINI ADALBERTO",
+    "FIGBCODE": "GCT011",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "GIANNINI GLAUCO",
+    "FIGBCODE": "GNC083",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "GIORGI ALBERTO",
+    "FIGBCODE": "GRT255",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "GIOVAGNOLI BARBARA",
+    "FIGBCODE": "GVR008",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "GJELOSHI XHOI",
+    "FIGBCODE": "GJH001",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "GORRA MARIA BEATRICE",
+    "FIGBCODE": "GRC027",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "GRISETTI MAURIZIA",
+    "FIGBCODE": "GRT297",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "GUIDI PISANA",
+    "FIGBCODE": "GDN017",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "IAIA COSIMO",
+    "FIGBCODE": "CSM007",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "IOMMI ROSALBA",
+    "FIGBCODE": "MMB001",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "IONI ANNAMARIA",
+    "FIGBCODE": "NNR013",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "JOMMI LEDA",
+    "FIGBCODE": "JMD001",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "LAMPREDI DANIELA",
+    "FIGBCODE": "LML093",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "LANZETTI ANNA MARIA",
+    "FIGBCODE": "LNR131",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "LO FARO ROSSELLA",
+    "FIGBCODE": "LFL034",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "LOPEZ PIERO",
+    "FIGBCODE": "PRZ029",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "LUIS ANGELA",
+    "FIGBCODE": "LSL004",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "LUNEDEI DANILO",
+    "FIGBCODE": "LNL180",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "MACCALLI ENRICA",
+    "FIGBCODE": "MCC078",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "MAGNANI CORRADO",
+    "FIGBCODE": "MGD043",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "MAGNANI MAURIZIO",
+    "FIGBCODE": "MGZ003",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "MALDINI DANIELA",
+    "FIGBCODE": "MLL019",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "MALTONI GIANFRANCO",
+    "FIGBCODE": "MLC004",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "MANDOLESI GIORGIO",
+    "FIGBCODE": "MNG124",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "MARTINI LINDA",
+    "FIGBCODE": "MRD053",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "MASCHIO MARIA PIA",
+    "FIGBCODE": "MSP033",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "MASSARI GIACOMO",
+    "FIGBCODE": "MSM032",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "MINGOLLA CHRISTOPHER",
+    "FIGBCODE": "MNR467",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "MINUTILLO VINCENZO",
+    "FIGBCODE": "MNZ150",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "MOLINARI MARCO AURELIO",
+    "FIGBCODE": "MLL196",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "MONTALTI EDDA",
+    "FIGBCODE": "MND045",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "MORRI SILVIA",
+    "FIGBCODE": "MRV015",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "MUCCIOLI MASSIMO",
+    "FIGBCODE": "MCM018",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "NANNI ALESSANDRO",
+    "FIGBCODE": "NNR074",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "NANNI SILVANO",
+    "FIGBCODE": "NNN014",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "NAVINO CARLO",
+    "FIGBCODE": "NVL031",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "ORAZIETTI VALERIO",
+    "FIGBCODE": "RZR057",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "ORLANDI MICHELA",
+    "FIGBCODE": "RLL027",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "PALAZZINI FINETTI DAVIDE",
+    "FIGBCODE": "PLD038",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "PAOLUCCI MAURO",
+    "FIGBCODE": "PLR206",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "PECCI ANTONIA",
+    "FIGBCODE": "PCN150",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "PECCI CLELIA",
+    "FIGBCODE": "PCL013",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "PECCI FERRANTE",
+    "FIGBCODE": "PCT009",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "PELONI SIMONETTA",
+    "FIGBCODE": "PLT053",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "PESCI FABIO",
+    "FIGBCODE": "PSB002",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "PIERGALLINI BARBARA",
+    "FIGBCODE": "PRR095",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "PINI CESARINA",
+    "FIGBCODE": "PNN241",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "PIOMBINI MAURIZIO",
+    "FIGBCODE": "PMZ002",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "PLACUCCI FEDERICO",
+    "FIGBCODE": "PLC122",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "PRETE ANNICK",
+    "FIGBCODE": "PRK009",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "RAINERO FEDERICO",
+    "FIGBCODE": "RNC026",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "RICCI GIUSEPPE",
+    "FIGBCODE": "RCP021",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "SANCHI GRAZIELLA",
+    "FIGBCODE": "SNL190",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "SANTI GIUSEPPE",
+    "FIGBCODE": "SNP023",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "SANTINI MASSIMO",
+    "FIGBCODE": "SNM032",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "SARACINO FRANCESCO",
+    "FIGBCODE": "SRC096",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "SCALICI TERESA",
+    "FIGBCODE": "SCS016",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "SEBASTIANI CINZIA",
+    "FIGBCODE": "SBZ018",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "SGUBBI GIANCARLO",
+    "FIGBCODE": "SGL008",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "SIMONI ELIO",
+    "FIGBCODE": "SML018",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "SIMONI SERGIO",
+    "FIGBCODE": "SMG024",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "SPINA ALESSANDRO",
+    "FIGBCODE": "SPR039",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "SPINACI FRANCO",
+    "FIGBCODE": "SPC107",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "TAMAGNINI SECONDO",
+    "FIGBCODE": "TMD003",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "TAMAI ANTONIO",
+    "FIGBCODE": "TMN012",
+    "CATEGORIA": 2
+  },
+  {
+    "NOME": "TEGON ELETTRA",
+    "FIGBCODE": "TGR040",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "TOMBINI BRUNO",
+    "FIGBCODE": "TMN025",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "TONTI SONIA",
+    "FIGBCODE": "TNN110",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "TORRONI ALFREDO",
+    "FIGBCODE": "TRD154",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "TORRONI ANGELO",
+    "FIGBCODE": "TRL089",
+    "CATEGORIA": 1
+  },
+  {
+    "NOME": "TOSATO LUCIANO",
+    "FIGBCODE": "TSN016",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "TOSCANO BRUNO",
+    "FIGBCODE": "TSN032",
+    "CATEGORIA": 4
+  },
+  {
+    "NOME": "URBINATI FRANCO",
+    "FIGBCODE": "RBC051",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "VENTURI ALESSANDRO",
+    "FIGBCODE": "VNR036",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "VENTURINI RICCARDO",
+    "FIGBCODE": "VND036",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "VICI MASSIMILIANO",
+    "FIGBCODE": "VCN016",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "ZANNONI LORIS",
+    "FIGBCODE": "ZNS035",
+    "CATEGORIA": 3
+  },
+  {
+    "NOME": "ZEPPA GABRIELLA",
+    "FIGBCODE": "ZPL003",
+    "CATEGORIA": 4
+  }
+]

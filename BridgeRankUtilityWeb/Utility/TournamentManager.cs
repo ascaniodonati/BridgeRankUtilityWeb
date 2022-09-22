@@ -1,4 +1,6 @@
-﻿using HtmlAgilityPack;
+﻿using BridgeRankUtilityWeb.Enums;
+using BridgeRankUtilityWeb.Types;
+using HtmlAgilityPack;
 using Newtonsoft.Json;
 using System.Diagnostics;
 
@@ -79,18 +81,18 @@ namespace BridgeRankUtilityWeb.Utility
 
                     Player p1 = new Player
                     {
-                        Name = NAME1.ParseName(),
+                        Nome = NAME1.ParseName(),
                         FIGBCode = FIGBCODE1.Trim(),
-                        Category = PlayersManager.GetCategoryFromCode(FIGBCODE1.Trim()),
-                        Position = POSITION
+                        Categoria = PlayersManager.GetCategoryFromCode(FIGBCODE1.Trim()),
+                        Posizione = POSITION
                     };
 
                     Player p2 = new Player
                     {
-                        Name = NAME2.ParseName(),
+                        Nome = NAME2.ParseName(),
                         FIGBCode = FIGBCODE2.Trim(),
-                        Category = PlayersManager.GetCategoryFromCode(FIGBCODE2.Trim()),
-                        Position = POSITION
+                        Categoria = PlayersManager.GetCategoryFromCode(FIGBCODE2.Trim()),
+                        Posizione = POSITION
                     };
 
                     playersInTournament.Add(p1);
@@ -144,10 +146,10 @@ namespace BridgeRankUtilityWeb.Utility
 
                         playersInTournament.Add(new Player
                         {
-                            Name = NAME.ParseName(),
+                            Nome = NAME.ParseName(),
                             FIGBCode = FIGBCODE,
-                            Category = PlayersManager.GetCategoryFromCode(FIGBCODE),
-                            Position = POSITION
+                            Categoria = PlayersManager.GetCategoryFromCode(FIGBCODE),
+                            Posizione = POSITION
                         });
                     }
                     catch
@@ -178,10 +180,10 @@ namespace BridgeRankUtilityWeb.Utility
             IEnumerable<Player> classifica =
                  from t in TOURNAMENTS
                  from p in t.Players
-                 where p.Category != 9
-                 group p by new { p.FIGBCode, p.Name, p.Category } into g
-                 orderby g.Key.Category, g.Sum(s => s.Points) descending
-                 select new Player { FIGBCode = g.Key.FIGBCode, Name = g.Key.Name, Category = g.Key.Category, Points = g.Sum(s => s.Points) };
+                 where p.Categoria != 9
+                 group p by new { p.FIGBCode, p.Nome, p.Categoria } into g
+                 orderby g.Key.Categoria, g.Sum(s => s.Punti) descending
+                 select new Player { FIGBCode = g.Key.FIGBCode, Nome = g.Key.Nome, Categoria = g.Key.Categoria, Punti = g.Sum(s => s.Punti) };
 
             return classifica;
         }

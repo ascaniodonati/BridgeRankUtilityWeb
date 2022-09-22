@@ -1,5 +1,45 @@
 ﻿@page "/rank"
+@using BridgeRankUtilityWeb.Elements
+@using BridgeRankUtilityWeb.Types
+@using BridgeRankUtilityWeb.Utility
+
+<div class="container-fluid h-100">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="mb-3">Aggiungi un torneo</h2>
+
+            <input class="form-control" type="text" placeholder="Incolla qui il link" @bind-value="TournamentName" @bind-value:event="oninput" />
+            
+            <TournamentElement />
+
+            <!-- Avviso di torneo non esistente -->
+            <div class="alert alert-danger pe-3" role="alert">
+                <p class="m-0"><strong>Attenzione!</strong> Il torneo non esiste</p>
+            </div>
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
+</div>
 
 @code {
+    private string _tournamentName;
 
+    public string TournamentName
+    {
+        get => _tournamentName;
+        set
+        {
+            if (_tournamentName != value)
+            {
+                _tournamentName = value;
+                LoadTournament();
+            }
+        }
+    }
+
+    public void LoadTournament()
+    {
+        Tournament tournament = TournamentManager.GetTournamentByLink(_tournamentName);
+    }
 }

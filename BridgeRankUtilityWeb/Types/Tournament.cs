@@ -1,10 +1,7 @@
-﻿namespace BridgeRankUtilityWeb
-{
-    public enum TournamentType
-    {
-        Pair, Team
-    }
+﻿using BridgeRankUtilityWeb.Enums;
 
+namespace BridgeRankUtilityWeb.Types
+{
     public class Tournament
     {
         public List<Player> Players { get; set; }
@@ -14,10 +11,10 @@
         public string URL { get; set; }
 
         public void AssignPoints()
-        {
-            Players = Players.OrderBy(s => s.Position).ToList();
+        { 
+            Players = Players.OrderBy(s => s.Posizione).ToList();
 
-            int[] positions = Players.Select(s => s.Position).ToArray();
+            int[] positions = Players.Select(s => s.Posizione).ToArray();
             List<int> newPosition = new List<int>();
             List<int> points = new List<int>();
 
@@ -40,7 +37,7 @@
 
             for (int i = 0; i < points.Count(); i++)
             {
-                Players[i].Points = points[i];
+                Players[i].Punti = points[i];
             }
 
             RicalcolaPunti();
@@ -48,30 +45,21 @@
 
         public void RicalcolaPunti()
         {
-            this.Players.ForEach(s =>
+            Players.ForEach(s =>
             {
-                switch (s.Position)
+                switch (s.Posizione)
                 {
                     case 1:
-                        s.Points += 3;
+                        s.Punti += 3;
                         break;
                     case 2:
-                        s.Points += 2;
+                        s.Punti += 2;
                         break;
                     case 3:
-                        s.Points += 1;
+                        s.Punti += 1;
                         break;
                 }
             });
         }
-    }
-
-    public class Player
-    {
-        public string Name { get; set; }
-        public string FIGBCode { get; set; }
-        public int Category { get; set; }   //va da 1 a 4
-        public int Position { get; set; }
-        public int Points { get; set; }
     }
 }

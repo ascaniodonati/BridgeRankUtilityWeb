@@ -1,4 +1,6 @@
-﻿namespace BridgeRankUtilityWeb.Utility
+﻿using BridgeRankUtilityWeb.Types;
+
+namespace BridgeRankUtilityWeb.Utility
 {
     public static class PlayersManager
     {
@@ -14,9 +16,9 @@
 
                 PLAYERS.Add(new Player
                 {
-                    Name = row[0],
+                    Nome = row[0],
                     FIGBCode = row[1],
-                    Category = int.Parse(row[2])
+                    Categoria = int.Parse(row[2])
                 });
             }
         }
@@ -27,7 +29,7 @@
 
             if (player.Any())
             {
-                return player.FirstOrDefault().Category;
+                return player.FirstOrDefault().Categoria;
             }
 
             //Se non trovo il giocatore nel file assegno 9 come categoria

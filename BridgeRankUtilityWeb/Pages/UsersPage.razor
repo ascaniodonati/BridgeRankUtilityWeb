@@ -1,9 +1,163 @@
 ﻿@page "/users"
+@inject HttpClient Http;
+@inject IJSRuntime Js;
 
-<div>
+@using BridgeRankUtilityWeb.Types
+@using Newtonsoft.Json
 
+<PageTitle>Utenti</PageTitle>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Aggiunta giocatori -->
+        <div class="col text-left me-lg-5">
+            <h3 class="mb-4">Aggiungi un giocatore</h3>
+
+            <div class="row mb-2">
+                <div class="col-4">
+                    <label for="namesurname">Nome e cognome</label>
+                </div>
+                <div class="col-8">
+                    <input class="w-100 text-uppercase" @bind=AddedPlayer.Nome id="namesurname" type="text" required />
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-4">
+                    <label for="code">Codice</label>
+                </div>
+                <div class="col-8">
+                    <input class="w-100 text-uppercase" @bind=AddedPlayer.FIGBCode id="code" type="text" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <label for="category">Categoria</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" min="1" max="3" class="w-100" @bind=AddedPlayer.Categoria id="category" required>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-between">
+                <div class="btn-group mt-3">
+                    <button type="submit" class="btn btn-success">Aggiungi</button>
+                    <button class="btn btn-danger">Cancella</button>
+                </div>
+
+                <button class="btn btn-success mt-3" @onclick="AddPlayer">Aggiungi da .CSV</button>
+            </div>
+
+        </div>
+
+        <!-- Right column -->
+        <div class="col text-center">
+
+            <!--SearchBox-->
+            <span class="me-1">Ricerca:</span>
+            <input type="text" @bind="SearchValue" placeholder="Utente" />
+            <span><button>X</button></span>
+
+            <div class="ask-table-wrapper" id="usersTableWrapper">
+                <table class="table table-hover table-striped ask-table text-start" id="usersTable" @ref="TableWrapper">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome e cognome</th>
+                            <th scope="col">Codice</th>
+                            <th scope="col">Tipologia</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var searchedPlayers =
+                            !string.IsNullOrEmpty(SearchValue)
+                            ? players?.Where(x => x.ToString.Contains(SearchValue.ToUpper())).ToList()
+                            : players;
+
+                            foreach (var player in searchedPlayers)
+                            {
+                                if (player != null)
+                                {
+                                    if (!player.IsEditing)
+                                    {
+                                        <tr>
+                                            <td>@player.Nome</td>
+                                            <td>@player.FIGBCode</td>
+                                            <td>@player.Categoria</td>
+                                            <td><button class="ask-button-edit" @onclick="() => EditPlayer(player)"><i class="fa-solid fa-pen"></i></button></td>
+                                            <td><button class="ask-button-delete" @onclick="() => DeletePlayer(player)"><i class="fa-sharp fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td><input type="text" @bind=player.Nome /></td>
+                                            <td><input type="text" @bind=player.FIGBCode /></td>
+                                            <td><input type="text" @bind=player.Categoria /></td>
+                                            <td colspan="2"><button @onclick="() => EditPlayer(player)">Conferma</button></td>
+                                        </tr>
+                                    }
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
 </div>
 
-@code {
+@code
+{
+    ElementReference TableWrapper;
+    Player AddedPlayer = new Player();
+
+    private List<Player> players = new List<Player>();
+    private string? _value;
+
+    public string NewPlayerName { get; set; } = "";
+    public string NewPlayerCode { get; set; } = "";
+    public string NewPlayerCategory { get; set; } = "";
+    public string? SearchValue { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        players = await Http.GetFromJsonAsync<List<Player>>("saves//Users.json");
+    }
+
+    public void AddPlayer()
+    {
+        var player = new Player
+            {
+                Nome = NewPlayerName,
+                FIGBCode = NewPlayerCode,
+                Categoria = int.Parse(NewPlayerCategory)
+            };
+
+        players.Insert(0, player);
+        Js.InvokeVoidAsync("scrollToTop");
+    }
+
+    public void EditPlayer(Player player)
+    {
+        if (!player.IsEditing)
+        {
+            players.All(p => { p.IsEditing = false; return true; });
+            player.IsEditing = true;
+        }
+        else {
+            player.IsEditing = false;
+        }
+    }
+
+    public void DeletePlayer(Player player)
+    {
+        players = players.Where(x => x != player).ToList();
+    }
 
 }

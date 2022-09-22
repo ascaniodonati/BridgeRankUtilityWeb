@@ -1,4 +1,5 @@
-﻿using HtmlAgilityPack;
+﻿using BridgeRankUtilityWeb.Enums;
+using HtmlAgilityPack;
 using System.Net;
 
 namespace BridgeRankUtilityWeb.Utility

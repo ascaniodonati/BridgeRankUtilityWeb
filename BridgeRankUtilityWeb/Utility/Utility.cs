@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using BridgeRankUtilityWeb.Enums;
 
 namespace BridgeRankUtilityWeb.Utility
 {
